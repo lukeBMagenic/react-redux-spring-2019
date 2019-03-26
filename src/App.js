@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 
+import HelloWorld from './components/@shared/HelloWorld/HelloWorld';
+import Clock from './components/@shared/Clock/Clock';
+import Toggle from './components/@shared/Toggle/Toggle';
+import Counter from './components/@shared/Counter/Counter';
+import Loop from './components/@shared/Loop/Loop';
+
 class App extends Component {
   render() {
     return (
@@ -19,8 +25,16 @@ class App extends Component {
           >
             Learn React
           </a>
+
+          <HelloWorld text="Hello World"/>
+          <Clock/>
+          <Toggle/>
+          <Counter/>
+          <Loop number="10"/>
+
         </header>
       </div>
+      
     );
   }
 }
