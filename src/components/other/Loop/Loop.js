@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types'
 import './Loop.scss';
 
 class Loop extends Component {
@@ -24,5 +25,9 @@ class Loop extends Component {
     );
   }
 }
+
+Loop.propTypes = {
+  number: propTypes.number.isRequired
+};
 
 export default Loop;

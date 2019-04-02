@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types'
 import './HelloWorld.scss';
 
 class HelloWorld extends Component {
+
+  static defaultProps = { text: 'Default Text' }; 
+
   render() {
     return (
       <div>
@@ -10,5 +14,9 @@ class HelloWorld extends Component {
     );
   }
 }
+
+HelloWorld.propTypes = {
+  text: propTypes.string
+};
 
 export default HelloWorld;
