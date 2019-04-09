@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from "enzyme";
 
-import Toggle from './Toggle';
+import ErrorBoundary from './ErrorBoundary';
 
-describe("Toggle", () => {
+describe("ErrorBoundary", () => {
   it("should render correctly", () => {
-    const component = shallow(<Toggle />);
+    const component = shallow(<ErrorBoundary />);
 
     expect(component).toMatchSnapshot();
   });

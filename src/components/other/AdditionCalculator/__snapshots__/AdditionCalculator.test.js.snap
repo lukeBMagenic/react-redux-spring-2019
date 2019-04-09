@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdditionCalculator should render correctly 1`] = `
+<Fragment>
+  <fieldset>
+    <legend>
+      Add up some numbers
+    </legend>
+    <input
+      onchange={[Function]}
+      value={0}
+    />
+    <input
+      onchange={[Function]}
+      value={0}
+    />
+  </fieldset>
+  <h1>
+    Sum of these numbers 
+    0
+  </h1>
+</Fragment>
+`;

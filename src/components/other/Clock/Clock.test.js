@@ -1,9 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from "enzyme";
+
 import Clock from './Clock';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Clock />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe("Clock", () => {
+  it("should render correctly", () => {
+    const component = shallow(<Clock />);
+
+    //expect(component).toMatchSnapshot();
+  });
 });

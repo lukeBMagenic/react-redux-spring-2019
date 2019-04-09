@@ -1,9 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from "enzyme";
+
 import HelloWorld from './HelloWorld';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<HelloWorld />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe("HelloWorld", () => {
+  it("should render correctly", () => {
+    const component = shallow(<HelloWorld />);
+
+    expect(component).toMatchSnapshot();
+  });
 });

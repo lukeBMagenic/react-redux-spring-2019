@@ -1,14 +1,12 @@
 import { pageType } from "../../../constants/PageType";
 
-export const changePage = (selectedPageType, history) => {
+export const findPage = (selectedPageType) => {
   switch (selectedPageType) {
     case pageType.Home:
-      history.push("/");
-      break;
+      return "/";
     case pageType.Other:
-      history.push("/other");
-      break;
+      return "/other";
     default:
-      break;
+      throw new Error(`page for ${selectedPageType} could not be found`);
   }
 };

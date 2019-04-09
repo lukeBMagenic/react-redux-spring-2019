@@ -7,7 +7,7 @@ import Icon from "@material-ui/core/Icon";
 import { withStyles } from "@material-ui/core/styles";
 
 import { pageType } from "../../../constants/PageType";
-import { changePage } from "./PageHeaderDomain.js";
+import { findPage } from "./PageHeaderDomain";
 
 const styles = theme => ({
   fab: {
@@ -24,19 +24,21 @@ class PageHeader extends Component {
     return (
       <Fragment>
         <Fab
+          id="home-button"
           color="primary"
           className={this.props.classes.fab}
           onClick={() => {
-            changePage(pageType.Home, this.props.history);
+            this.props.history.push(findPage(pageType.Home));
           }}
         >
           <Icon className={facebookIcon} />
         </Fab>
         <Fab
+          id="other-button"
           color="primary"
           className={this.props.classes.fab}
           onClick={() => {
-            changePage(pageType.Other, this.props.history);
+            this.props.history.push(findPage(pageType.Other));
           }}
         >
           <Icon className={googleIcon} />

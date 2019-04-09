@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OtherPage should render correctly 1`] = `
+<ErrorBoundary>
+  <withRouter(WithStyles(PageHeader)) />
+  <h1>
+    Other Page
+  </h1>
+</ErrorBoundary>
+`;

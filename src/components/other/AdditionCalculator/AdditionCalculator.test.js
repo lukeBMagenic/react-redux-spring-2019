@@ -1,9 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from "enzyme";
+
 import AdditionCalculator from './AdditionCalculator';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<AdditionCalculator />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe("AdditionCalculator", () => {
+  it("should render correctly", () => {
+    const component = shallow(<AdditionCalculator />);
+
+    expect(component).toMatchSnapshot();
+  });
 });
