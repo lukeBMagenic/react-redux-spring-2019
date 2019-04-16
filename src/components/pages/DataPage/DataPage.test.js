@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from "enzyme";
 
-import OtherPage from './OtherPage';
+import DataPage from './DataPage';
 
-describe("OtherPage", () => {
+describe("DataPage", () => {
   it("should render correctly", () => {
-    const component = shallow(<OtherPage />);
+    const component = shallow(<DataPage />);
 
     expect(component).toMatchSnapshot();
   });

@@ -1,5 +1,5 @@
 export const pageType = {
     None: 0,
-    Home: 1, 
-    Other: 2
+    FamilyTree: 1, 
+    Data: 2
 }

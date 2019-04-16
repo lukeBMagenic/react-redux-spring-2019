@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import './FamilyBlock.scss';
-import SimpleCard from './SimpleCard';
-import Node from './Node';
+import './Tree.scss';
+import Node from '../Node/Node';
 
-class FamilyBlock extends Component {
+class Tree extends Component {
 
     showTree = () => {
       var json = [{
@@ -47,4 +46,4 @@ class FamilyBlock extends Component {
     }
   }
 
-export default FamilyBlock;
+export default Tree;

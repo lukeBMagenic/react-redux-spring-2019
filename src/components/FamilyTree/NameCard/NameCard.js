@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import './SimpleCard.scss';
+import './NameCard.scss';
 import propTypes from 'prop-types'
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-class SimpleCard extends Component {
+class NameCard extends Component {
   
     render() {
         return (
@@ -25,9 +23,9 @@ class SimpleCard extends Component {
     }
   }
 
-  SimpleCard.propTypes = {
+  NameCard.propTypes = {
     name: propTypes.string.isRequired,
     year: propTypes.number.isRequired
   };
 
-export default SimpleCard;
+export default NameCard;

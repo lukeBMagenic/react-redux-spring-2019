@@ -4,8 +4,8 @@ import { shallow, mount } from "enzyme";
 
 import App from './App';
 import PageHeader from "./components/@shared/PageHeader/PageHeader";
-import HomePage from "./components/pages/HomePage/HomePage";
-import OtherPage from "./components/pages/OtherPage/OtherPage";
+import FamilyTreePage from "./components/pages/FamilyTreePage/FamilyTreePage";
+import DataPage from "./components/pages/DataPage/DataPage";
 
 describe("App", () => {
   it('renders without crashing', () => {
@@ -21,22 +21,22 @@ describe("App", () => {
     const mountedApp = mount(<App />);
     expect(mountedApp.find(PageHeader).length).toBe(1);
   });
-  it("should find Home Page by default", () => {
+  it("should find Family Tree Page by default", () => {
     const mountedApp = mount(<App />);
-    expect(mountedApp.find(HomePage).length).toBe(1);
+    expect(mountedApp.find(FamilyTreePage).length).toBe(1);
   });
-  it("should find Home Page when Home icon clicked", () => {
+  it("should find Family Tree Page when Tree icon clicked", () => {
     const mountedApp = mount(<App />);
     mountedApp
-      .find('button#home-button')
+      .find('button#family-tree-button')
       .simulate('click')
-    expect(mountedApp.find(HomePage).length).toBe(1);
+    expect(mountedApp.find(FamilyTreePage).length).toBe(1);
   });
-  it("should find Other Page when Other icon clicked", () => {
+  it("should find Data Page when Data icon clicked", () => {
     const mountedApp = mount(<App />);
     mountedApp
-      .find('button#other-button')
+      .find('button#data-button')
       .simulate('click')
-    expect(mountedApp.find(OtherPage).length).toBe(1);
+    expect(mountedApp.find(DataPage).length).toBe(1);
   });
 });

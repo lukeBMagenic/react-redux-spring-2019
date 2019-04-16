@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import './Node.scss';
 
-import SimpleCard from './SimpleCard';
+import NameCard from '../NameCard/NameCard';
 
 class Node extends React.Component {
 
@@ -19,8 +20,8 @@ class Node extends React.Component {
       return (
         <li key={this.props.node.member.id}>      
             <a>
-                <SimpleCard name={this.props.node.member.name} year={this.props.node.member.year} />
-                {this.props.node.member.partnerName && <SimpleCard name={this.props.node.member.partnerName} year={this.props.node.member.partnerYear} />}
+                <NameCard name={this.props.node.member.name} year={this.props.node.member.year} />
+                {this.props.node.member.partnerName && <NameCard name={this.props.node.member.partnerName} year={this.props.node.member.partnerYear} />}
             </a>
           { childnodes ?
             <ul>{childnodes}</ul>

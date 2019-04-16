@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from "enzyme";
 
-import HomePage from './HomePage';
+import FamilyTreePage from './FamilyTreePage';
 
-describe("HomePage", () => {
+describe("FamilyTreePage", () => {
   it("should render correctly", () => {
-    const component = shallow(<HomePage />);
+    const component = shallow(<FamilyTreePage />);
 
     expect(component).toMatchSnapshot();
   });

@@ -18,30 +18,30 @@ const styles = theme => ({
 
 class PageHeader extends Component {
   render(){
-    const facebookIcon = `${this.props.classes.icon} fab fa-facebook-square`;
-    const googleIcon = `${this.props.classes.icon} fab fa-google`;
-  
+    const treeIcon = '${this.props.classes.icon} fab fas fa-tree';
+    const dataIcon = '${this.props.classes.icon} fab fas fa-database';
+
     return (
       <Fragment>
         <Fab
-          id="home-button"
+          id="family-tree-button"
           color="primary"
           className={this.props.classes.fab}
           onClick={() => {
-            this.props.history.push(findPage(pageType.Home));
+            this.props.history.push(findPage(pageType.FamilyTree));
           }}
         >
-          <Icon className={facebookIcon} />
+          <Icon className={treeIcon} />
         </Fab>
         <Fab
-          id="other-button"
+          id="data-button"
           color="primary"
           className={this.props.classes.fab}
           onClick={() => {
-            this.props.history.push(findPage(pageType.Other));
+            this.props.history.push(findPage(pageType.Data));
           }}
         >
-          <Icon className={googleIcon} />
+          <Icon className={dataIcon} />
         </Fab>
       </Fragment>
     );
