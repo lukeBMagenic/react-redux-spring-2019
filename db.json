@@ -1,4 +1,22 @@
 {
+    "get": [
+      {
+        "member": {"id": "1", "name": "Garry Bost", "year": "1966", "partnerName": "Susan Bost", "partnerYear": "1968" }, 
+        "children": [
+            {
+              "member": {"id": "2", "name": "Luke Bost", "year": "1988", "partnerName": "Kristina Thompson Bost", "partnerYear": "1987"},
+              "children": [{ "member": {"id": "3", "name": "Baby Bost", "year": "2019"}}]
+            },
+            {
+              "member": {"id": "4", "name": "Andy Bost", "year": "1990"},
+            },
+            {
+              "member": {"id": "5", "name": "Katie Jacobson", "year": "1991", "partnerName": "Andrew Jacobson", "partnerYear": "1991"},
+              "children": [{ "member": {"id": "6", "name": "Morgan Jacobson", "year": "2018"}}]
+            },
+        ] 
+      }
+    ],
     "posts": [
       {
         "id": 1,
