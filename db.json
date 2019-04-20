@@ -1,8 +1,7 @@
 {
 	"get": [
 	  {
-		"id": 1,
-		"title": "hello"
+	  	"member": {"id": "1", "name": "Garry Bost", "year": "1966", "partnerName": "Susan Bost", "partnerYear": "1968" }, 
 	  }
 	],
 	"posts": [
