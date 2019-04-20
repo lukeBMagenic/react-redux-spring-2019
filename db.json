@@ -21,5 +21,8 @@
 		"id": 1,
 		"title": "hello"
 	  }
-	]
+	],
+	"profile": {
+	    "name": "lukeBMagenic"
+  	}
  }
