@@ -1,5 +1,5 @@
 {
-	"treedata": {
+	"treedata": [{
 	  	"member": {"id": "1", "name": "Garry", "year": "1966", "partnerName": "Susan", "partnerYear": "1968" },
 	  	"children": [{
           		"member": {"id": "2", "name": "Luke", "year": "1988", "partnerName": "Kristina", "partnerYear": "1987"},
@@ -13,7 +13,7 @@
           		"children": [{ "member": {"id": "6", "name": "Morgan", "year": "2018"}}]
         	}
         	] 
-  	},
+  	}],
 	"posts": [
 	  {
 		"id": 1,
