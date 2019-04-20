@@ -4,46 +4,41 @@ import Node from '../Node/Node';
 
 class Tree extends Component {
 
-    showTree = () => {
-      var json = [{
-          "member": {"id": "1", "name": "Garry Bost", "year": "1966", "partnerName": "Susan Bost", "partnerYear": "1968" }, 
-          "children": [{
-            "member": {"id": "2", "name": "Luke Bost", "year": "1988", "partnerName": "Kristina Thompson Bost", "partnerYear": "1987"},
-            "children": [{ "member": {"id": "3", "name": "Baby Bost", "year": "2019"}}]
-          },
-          {
-            "member": {"id": "4", "name": "Andy Bost", "year": "1990"},
-          },
-          {
-            "member": {"id": "5", "name": "Katie Jacobson", "year": "1991", "partnerName": "Andrew Jacobson", "partnerYear": "1991"},
-            "children": [{ "member": {"id": "6", "name": "Morgan Jacobson", "year": "2018"}}]
-          },
-          ] 
-        }];
+  constructor(props) {
+    super(props);
+    this.state = {data: []};
+  }
 
-      let nodes = json.map(function(member) {                   
-        return (
-          <Node node={member} children={member.children} />
-        );
-      });       
-  
+  showTree = () => {
+    if(this.props.data.length === 0)
+    {
+      return;
+    }
+
+    let nodes = this.props.data.map(function(member) {                   
       return (
-        <div>
-          <ul className="org">
-           {nodes}
-          </ul>        
+        <Node node={member} children={member.children} />
+      );
+    });       
+
+    return (
+      <div>
+        {/* <p>test: {this.props.data.member.name}</p> */}
+        <ul className="org">
+          {nodes}
+        </ul>        
+      </div>
+    );
+
+  }
+
+  render() {
+      return (
+        <div className="tree">
+          {this.showTree()}
         </div>
       );
-
-    }
-
-    render() {
-        return (
-          <div className="tree">
-            {this.showTree()}
-          </div>
-        );
-    }
   }
+}
 
 export default Tree;

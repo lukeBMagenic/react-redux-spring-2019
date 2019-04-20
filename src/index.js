@@ -8,12 +8,12 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import configureStore from "./store/configureStore";
 
-//const store = configureStore();
+const store = configureStore();
 
 ReactDOM.render(
-    // <Provider store={store}>
+     <Provider store={store}>
         <App />,
-    //  </Provider>, 
+      </Provider>, 
   document.getElementById("root")
 );
 
