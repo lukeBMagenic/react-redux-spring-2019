@@ -54,17 +54,17 @@
 	    {"member": {"id": "1", "name": "Angel", "year": "1976", "partnerName": "Joe", "partnerYear": "" },
 	      "children": [
 		{"member": {"id": "6", "name": "Becca", "year": ""}},
-		{"member": {"id": "6", "name": "Bethie", "year": ""}},
+		{"member": {"id": "6", "name": "Bethie", "year": ""}}
 	      ]
 	    },
 	    {"member": {"id": "1", "name": "Kathy", "year": "1978", "partnerName": "TJ", "partnerYear": "" },
 	      "children": [
 		{"member": {"id": "6", "name": "Alana", "year": ""}},
 		{"member": {"id": "6", "name": "Ariah", "year": ""}},
-		{"member": {"id": "6", "name": "Isaiah", "year": ""}},
+		{"member": {"id": "6", "name": "Isaiah", "year": ""}}
 	      ]
 	    },
-	    {"member": {"id": "1", "name": "Peter", "year": "1980", "partnerName": "", "partnerYear": "" }},
+	    {"member": {"id": "1", "name": "Peter", "year": "1980", "partnerName": "", "partnerYear": "" }}
 	  ] 
 	}],
 	"posts": [
