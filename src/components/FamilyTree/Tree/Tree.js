@@ -23,7 +23,6 @@ class Tree extends Component {
 
     return (
       <div>
-        {/* <p>test: {this.props.data.member.name}</p> */}
         <ul className="org">
           {nodes}
         </ul>        
