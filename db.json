@@ -7,12 +7,12 @@
           		"children": [{ "member": {"id": "3", "name": "Baby", "year": "2019"}}]
         	},
         	{
-          		"member": {"id": "4", "name": "Andy", "year": "1990"},
+          		"member": {"id": "4", "name": "Andy", "year": "1990"}
         	},
         	{
           		"member": {"id": "5", "name": "Katie", "year": "1991", "partnerName": "Andrew", "partnerYear": "1991"},
           		"children": [{ "member": {"id": "6", "name": "Morgan", "year": "2018"}}]
-        	},
+        	}
         	] 
 	  }
 	],
@@ -21,8 +21,5 @@
 		"id": 1,
 		"title": "hello"
 	  }
-	],
-	"profile": {
-	  "name": "lukeBMagenic"
-	}
+	]
  }
